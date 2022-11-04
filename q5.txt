@@ -1,0 +1,10 @@
+1.
+Variable a does not go through change after the variable is called into the function
+
+2.
+Variable b does go through the change and is properly incremented after being called into the function
+
+3.
+The two values differ due to the way of passing elements into the function. When you pass in variable 'a', the value '32' is passed into the function by value, however it is not saved into the variable if returned and variable 'a' is still '32'. When variable 'b' is passed into the function, it is passed in the form of a list by reference, instead of value. After the increment it becomes [33], and if returned, the value saves the increment done by the function and remains [33]. 
+
+
