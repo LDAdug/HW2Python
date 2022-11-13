@@ -1,7 +1,6 @@
-from time import time
+import time
 
 def timeme(func):
-
     def wrap_func(*args, **kwargs):
         t1 = time()
         result = func(*args, **kwargs)
