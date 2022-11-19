@@ -4,13 +4,13 @@ def timeme(func):
     def wrap_func(*args, **kwargs):
         t1 = time.time()
         float(int(t1))
-        t12 = "{:.3f}".format(t1)
+
         result = func(*args, **kwargs)
 
         t2 = time.time()
         float(int(t2))
-        t22 = "{:.3f}".format(t2)
-        print(f'Total time {(t22-t12)}s')
-        return result
+
+        print(f"Total time %.2fs" % (t2-t1))
     return wrap_func
+
 
